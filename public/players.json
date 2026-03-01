@@ -1,0 +1,110 @@
+[
+  {
+    "playerName": "Virat Kohli",
+    "playerImage": "https://cdn.britannica.com/48/252748-050-C514EFDB/Virat-Kohli-India-celebrates-50th-century-Cricket-November-15-2023.jpg",
+    "playerPrice": 1.8,
+    "playerCountry": "India",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "rating": 9.5
+  },
+  {
+    "playerName": "Babar Azam",
+    "playerImage": "https://c8.alamy.com/comp/2X8G22T/babar-azam-of-pakistan-during-the-vitality-t20-international-series-match-england-vs-pakistan-at-edgbaston-birmingham-united-kingdom-25th-may-2024-photo-by-craig-thomasnews-images-2X8G22T.jpg",
+    "playerPrice": 1.6,
+    "playerCountry": "Pakistan",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "rating": 9.3
+  },
+  {
+    "playerName": "Steve Smith",
+    "playerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDVvgIxoJNK-UGI4yjsvYYVRyjgivG2gCTQA&s",
+    "playerPrice": 1.7,
+    "playerCountry": "Australia",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm leg spin",
+    "rating": 9.1
+  },
+  {
+    "playerName": "Kane Williamson",
+    "playerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDdqQwyK2YdV870tIqbQf0cfhwgMqsMKbDw&s",
+    "playerPrice": 1.5,
+    "playerCountry": "New Zealand",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off spin",
+    "rating": 8.9
+  },
+  {
+    "playerName": "Rohit Sharma",
+    "playerImage": "https://media.gettyimages.com/id/2203526196/photo/indias-captain-rohit-sharma-reacts-after-the-toss-before-the-start-of-the-icc-champions.jpg?s=612x612&w=gi&k=20&c=DB7eWSpqZ620GT5cZ9_6tFknmg2JI2HpHiomHIF1NMc=",
+    "playerPrice": 1.9,
+    "playerCountry": "India",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off spin",
+    "rating": 9.0
+  },
+  {
+    "playerName": "Jos Buttler",
+    "playerImage": "https://static.independent.co.uk/2022/11/12/07/4a655b514a0538cc8b0bb6e7b1cabefeY29udGVudHNlYXJjaGFwaSwxNjY4MzE5MTg5-2.69703789.jpg",
+    "playerPrice": 1.4,
+    "playerCountry": "England",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "rating": 8.8
+  },
+  {
+    "playerName": "Glenn Maxwell",
+    "playerImage": "https://static.independent.co.uk/2023/11/07/17/07-699f9620f4254f2e9aae0f8fe9e580ab.jpg",
+    "playerPrice": 1.6,
+    "playerCountry": "Australia",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm off spin",
+    "rating": 8.7
+  },
+  {
+    "playerName": "Shakib Al Hasan",
+    "playerImage": "https://wallpapers.com/images/hd/shakib-al-hasan-smiling-8olow941lckcha6b.jpg",
+    "playerPrice": 1.8,
+    "playerCountry": "Bangladesh",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm orthodox",
+    "rating": 9.2
+  },
+  {
+    "playerName": "AB de Villiers",
+    "playerImage": "https://media.gettyimages.com/id/143306352/photo/jaipur-india-royal-challengers-bangalore-batsman-ab-de-villiers-plays-a-shot-during-the-ipl-5.jpg?s=612x612&w=gi&k=20&c=y2K1BZVTFOvE-1HJLiBnNwPEnA6PERAaIHC6U-j1Egc=",
+    "playerPrice": 1.9,
+    "playerCountry": "South Africa",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "rating": 9.6
+  },
+  {
+    "playerName": "KL Rahul",
+    "playerImage": "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/410200/410204.jpg",
+    "playerPrice": 1.3,
+    "playerCountry": "India",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "N/A",
+    "rating": 8.6
+  },
+  {
+    "playerName": "David Warner",
+    "playerImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsnPH4vfvJSSmSS0s0lveb3mpEvLkCqaslfQ&s",
+    "playerPrice": 1.7,
+    "playerCountry": "Australia",
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm leg spin",
+    "rating": 9.0
+  },
+  {
+    "playerName": "Faf du Plessis",
+    "playerImage": "https://p.imgci.com/db/PICTURES/CMS/321000/321097.jpg",
+    "playerPrice": 1.4,
+    "playerCountry": "South Africa",
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Part-time leg spin",
+    "rating": 8.7
+  }
+]
