@@ -1,6 +1,11 @@
 import React from "react";
 
-const StatePlayer = ({ handleSelected, handleAvailable, toggle }) => {
+const StatePlayer = ({
+  handleSelected,
+  handleAvailable,
+  toggle,
+  selectedPlayers,
+}) => {
   return (
     <div className="flex justify-between items-center my-14">
       <p className="font-bold text-lg md:text-xl">
@@ -17,7 +22,7 @@ const StatePlayer = ({ handleSelected, handleAvailable, toggle }) => {
           onClick={handleSelected}
           className={`px-2 md:px-4 py-2 rounded-r-xl  border-2 border-l-0 border-gray-500 text-nowrap ${toggle || "bg-amber-300"}`}
         >
-          Selected (<span>0</span>)
+          Selected (<span>{selectedPlayers.length}/6</span>)
         </button>
       </div>
     </div>

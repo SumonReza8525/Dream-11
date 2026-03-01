@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import userImg from "../../assets/user.png";
 import flag from "../../assets/report.png";
-const Player = ({ player }) => {
+const Player = ({ player, handleSelectedPlayers, selectedPlayers }) => {
+  const [isSelected, setIsSelected] = useState(false);
+  const handleSelected = () => {
+    setIsSelected(true);
+    handleSelectedPlayers(player);
+  };
+
   return (
     <div className="border-2 border-gray-200 p-4 rounded-xl space-y-2">
       <img
@@ -33,8 +39,12 @@ const Player = ({ player }) => {
           <span>Price in crore: $</span>
           <span>{player.playerPrice}</span>
         </p>
-        <button className="border-2 border-gray-400 px-3 py-1.5 rounded-2xl font-bold bg-gray-200">
-          Choose Player
+        <button
+          disabled={isSelected || selectedPlayers.length >= 6}
+          onClick={handleSelected}
+          className={` px-3 py-1.5 rounded-2xl font-bold  ${isSelected || selectedPlayers.length > 6 ? "bg-green-600 text-white border-2 border-green-600" : "bg-gray-200 border-2 border-gray-400"}`}
+        >
+          {isSelected ? "Selected" : "Choose Player"}
         </button>
       </div>
     </div>

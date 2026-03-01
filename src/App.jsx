@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
 import Container from "./Container";
 import Navbar from "./components/navbar/Navbar";
@@ -7,13 +7,25 @@ import Banner from "./components/banner/Banner";
 import FooterContainer from "./components/footer/FooterContainer";
 import SelectedPlayers from "./components/selectedPlayers/SelectedPlayers";
 import StatePlayer from "./components/playerState/StatePlayer";
-const loadData = async () => {
-  const res = await fetch("/players.json");
-  const data = await res.json();
-  return data;
-};
 
 const App = () => {
+  const [loadData, setLoadData] = useState([]);
+  useEffect(() => {
+    fetch("/players.json")
+      .then((res) => res.json())
+      .then((data) => setLoadData(data));
+  }, []); // empty dependency = run once
+
+  // const dataPromise = loadData();
+  const [selectedPlayers, setSelelctedPlayers] = useState([]);
+
+  const handleSelectedPlayers = (player) => {
+    if (selectedPlayers.length >= 6) {
+      return; // stop here
+    }
+    setSelelctedPlayers([...selectedPlayers, player]);
+  };
+  // console.log(selectedPlayers);
   const [toggle, setToggle] = useState(true);
   const handleAvailable = () => {
     setToggle(true);
@@ -21,16 +33,24 @@ const App = () => {
   const handleSelected = () => {
     setToggle(false);
   };
-  const dataPromise = loadData();
+
+  const handleDeletePlayer = (playerToDelete) => {
+    const remaining = selectedPlayers.filter(
+      (player) => player.playerName !== playerToDelete.playerName,
+    );
+    setSelelctedPlayers(remaining);
+  };
+
   return (
     <div>
       <Container>
-        <Navbar></Navbar>
+        <Navbar selectedPlayers={selectedPlayers}></Navbar>
         <Banner></Banner>
         <StatePlayer
           handleAvailable={handleAvailable}
           handleSelected={handleSelected}
           toggle={toggle}
+          selectedPlayers={selectedPlayers}
         ></StatePlayer>
 
         {toggle ? (
@@ -41,10 +61,17 @@ const App = () => {
               </p>
             }
           >
-            <Players dataPromise={dataPromise}></Players>
+            <Players
+              loadData={loadData}
+              handleSelectedPlayers={handleSelectedPlayers}
+              selectedPlayers={selectedPlayers}
+            ></Players>
           </Suspense>
         ) : (
-          <SelectedPlayers></SelectedPlayers>
+          <SelectedPlayers
+            selectedPlayers={selectedPlayers}
+            handleDeletePlayer={handleDeletePlayer}
+          ></SelectedPlayers>
         )}
       </Container>
       <FooterContainer></FooterContainer>
