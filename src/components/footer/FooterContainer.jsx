@@ -23,7 +23,7 @@ const FooterContainer = () => {
             {" "}
             <input
               placeholder="Enter your email"
-              className="border-2 px-3 py-1.5 rounded-xl bg-white border-gray-300"
+              className="border-2 px-3 py-1.5 rounded-xl bg-white border-gray-300 outline-0"
               type="text"
               name=""
               id=""
@@ -61,7 +61,7 @@ const FooterContainer = () => {
               {" "}
               <input
                 placeholder="Enter your email"
-                className="border-2 px-3 py-1.5 rounded-xl bg-white border-gray-300"
+                className="border-2 px-3 py-1.5 rounded-xl border-gray-300 bg-white placeholder:text-gray-500 outline-0 text-black"
                 type="text"
                 name=""
                 id=""
